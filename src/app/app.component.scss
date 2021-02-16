@@ -1,0 +1,20 @@
+::ng-deep {
+  .ql-container {
+    width: 210mm;
+    height: 297mm;
+  }
+
+  .ql-toolbar {
+    width: 210mm;
+  }
+
+  .ql-mention-list-item {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    font-size: 15px;
+    line-height: 150%;
+    height: auto;
+  }
+}
+
