@@ -5,3 +5,12 @@
   padding: 10px;
   margin: 39px;
 }
+
+
+::ng-deep .d-flex {
+  display: flex;
+}
+
+::ng-deep .flex-between {
+  justify-content: space-between;
+}

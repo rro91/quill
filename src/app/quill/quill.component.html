@@ -3,12 +3,12 @@
     Select block to insert:
     <select (change)="insertText($event)">
       <option selected>-</option>
-      <option *ngFor="let option of options" [value]="option.value">{{option.name}}</option>
+      <option *ngFor="let template of templates" [value]="template.content">{{template.title}}</option>
     </select>
 <!--    <button (click)="getPdf()">Generate pdf</button>-->
     <button (click)="saveData()">Save</button>
     <br>
-    Start typing '[' to add variable
+<!--    Start typing '[' to add variable-->
     <div style="display: flex; flex-wrap: wrap">
       <ng-container *ngFor="let page of pages, let index = index">
         <quill-editor #pagesEl

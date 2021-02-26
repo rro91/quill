@@ -4,6 +4,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { QuillModule } from 'ngx-quill';
 import { QuillComponent } from './quill/quill.component'
+import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 
 @NgModule({
   declarations: [
@@ -13,7 +14,9 @@ import { QuillComponent } from './quill/quill.component'
   imports: [
     BrowserModule,
     AppRoutingModule,
-    QuillModule.forRoot(),  ],
+    QuillModule.forRoot(),
+    FormsModule, ReactiveFormsModule
+  ],
   providers: [],
   bootstrap: [AppComponent]
 })
